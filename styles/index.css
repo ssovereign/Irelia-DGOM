@@ -1,0 +1,58 @@
+/* Base widget styles */
+QWidget {
+    background-color: {{ primary_color }}; /* Dark background */
+    color: {{ text_color }};              /* White text */
+}
+
+/* Button styles */
+QPushButton {
+    background-color: {{ button_color }}; /* Dark button background */
+    color: {{ text_color }};              /* White text */
+    border: 1px solid {{ text_color }};   /* White border */
+    padding: 8px;
+    border-radius: 5px;
+}
+
+QPushButton:hover {
+    background-color: {{ button_hover_color }}; /* Lighter background on hover */
+}
+
+/* Label styles */
+QLabel {
+    color: {{ text_color }}; /* White text */
+}
+
+/* Menu bar styles */
+QMenuBar {
+    background-color: {{ button_color }}; /* Same as button background */
+    color: {{ text_color }};              /* White text */
+}
+
+QMenuBar::item {
+    background-color: transparent;        /* Transparent background */
+    color: {{ text_color }};              /* White text */
+    padding: 5px 10px;                    /* Padding for menu items */
+}
+
+QMenuBar::item:selected {                 /* Hover effect on menu items */
+    background-color: {{ button_hover_color }}; /* Lighter hover background */
+    color: {{ text_color }};              /* Keep text color consistent */
+}
+
+/* Menu dropdown styles */
+QMenu {
+    background-color: {{ button_color }}; /* Dropdown background */
+    color: {{ text_color }};              /* White text */
+    border: 1px solid {{ text_color }};   /* Border around dropdown */
+}
+
+QMenu::item {
+    background-color: transparent;        /* Transparent background for items */
+    color: {{ text_color }};              /* White text */
+    padding: 5px 20px;                    /* Padding for dropdown items */
+}
+
+QMenu::item:selected {                    /* Hover effect on dropdown items */
+    background-color: {{ button_hover_color }}; /* Lighter hover background */
+    color: {{ text_color }};              /* Keep text color consistent */
+}
